@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Arista 2.0 Alternate full';
+    src: url('Arista20Alternatefull.woff2') format('woff2'),
+        url('Arista20Alternatefull.woff') format('woff'),
+        url('Arista20Alternatefull.svg#Arista2.0Alternatefull') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arista 2.0';
+    src: url('Arista20.woff2') format('woff2'),
+        url('Arista20.woff') format('woff'),
+        url('Arista20.svg#Arista2.0') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arista 2.0';
+    src: url('Arista20Light.woff2') format('woff2'),
+        url('Arista20Light.woff') format('woff'),
+        url('Arista20Light.svg#Arista2.0Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arista 2.0 Fat';
+    src: url('Arista20Fat.woff2') format('woff2'),
+        url('Arista20Fat.woff') format('woff'),
+        url('Arista20Fat.svg#Arista2.0Fat') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arista 2.0 Alternate';
+    src: url('Arista20AlternateLight.woff2') format('woff2'),
+        url('Arista20AlternateLight.woff') format('woff'),
+        url('Arista20AlternateLight.svg#Arista2.0AlternateLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arista 2.0 Alternate';
+    src: url('Arista20Alternate.woff2') format('woff2'),
+        url('Arista20Alternate.woff') format('woff'),
+        url('Arista20Alternate.svg#Arista2.0Alternate') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
