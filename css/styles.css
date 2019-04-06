@@ -52,6 +52,17 @@ html, body {
   height: 100%;
 }
 
+.aboutImg--show {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .aboutImg--show {
+    display: block;
+    margin-top: 350px;
+  }
+}
+
 .fullPage {
   background-size: cover;
   position: relative;
@@ -297,7 +308,7 @@ html, body {
 
 @media screen and (max-width: 576px) {
   #work {
-    padding: 8rem 0 0 0;
+    padding: 4rem 0 4rem 0;
   }
 }
 
@@ -320,7 +331,7 @@ html, body {
 
 @media screen and (max-width: 576px) {
   .work {
-    border: 2px solid #ffffff;
+    border: none;
   }
   .work .workContent .aboutTitle {
     margin: 2rem 0 2rem 0;
@@ -346,8 +357,26 @@ html, body {
   }
 }
 
+#projects__mobile {
+  display: none;
+  overflow: hidden;
+  padding: 4rem 0;
+}
+
+@media screen and (max-width: 728px) {
+  #projects__mobile {
+    display: block;
+  }
+}
+
 .projects {
   height: 50%;
+}
+
+@media screen and (max-width: 728px) {
+  .projects {
+    display: none;
+  }
 }
 
 .projectsDetails {
@@ -394,6 +423,32 @@ html, body {
 
 figure {
   margin-bottom: 0 !important;
+}
+
+.owl-nav {
+  display: none;
+}
+
+.owl-dots {
+  display: none;
+}
+
+.owl-dots .owl-dot {
+  width: 45px;
+  height: 10px;
+  border-bottom: 3px solid #ff9c00;
+  position: relative;
+  top: -5px;
+  margin: 0 3px;
+  outline: none;
+  -webkit-transition: 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.owl-dots .owl-dot.active, .owl-dots .owl-dot:hover {
+  border-bottom: 3px solid #000000;
+  -webkit-transition: 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .half__bg {

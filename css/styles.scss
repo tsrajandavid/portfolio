@@ -13,6 +13,15 @@ html,body
         @content;
     }
 }
+.aboutImg--show
+{
+    display: none;
+    @include mQ(768px)
+    {
+        display: block;
+        margin-top: 350px;
+    }
+}
 .fullPage 
 {
     background-size:cover;
@@ -102,7 +111,6 @@ background-image: url(../images/homeBg.jpg);
         animation: jump 1.5s ease 0s infinite normal ;
        }
 }
-
 
 
 .color__white
@@ -232,7 +240,7 @@ margin: 55% 0 0 0;
     padding: 3rem 0 0 0;
     @include mQ(576px)
     {
-        padding: 8rem 0 0 0;
+        padding: 4rem 0 4rem 0;
     }
 
     
@@ -255,7 +263,7 @@ margin: 55% 0 0 0;
     padding: 0 0 3rem 0;
     @include mQ(576px)
     {
-        border:2px solid $white;
+        border:none;
         .workContent 
         {
             .aboutTitle {
@@ -287,9 +295,23 @@ margin: 55% 0 0 0;
         }
     }
 }
+#projects__mobile
+{
+    display: none;
+    overflow: hidden;
+    padding: 4rem 0;
+    @include mQ(728px)
+    {
+        display: block;
+    }
+}
 .projects
 {
     height: 50%;
+    @include mQ(728px)
+    {
+        display: none;
+    }
 }
 .projectsDetails
 {
@@ -342,6 +364,34 @@ figure
 {
     margin-bottom: 0 !important;
 }
+.owl-nav
+{
+    display: none;
+}
+
+.owl-dots 
+{
+    display: none;
+    .owl-dot
+    {
+        width: 45px;
+       height: 10px;
+        border-bottom: 3px solid $yellow;
+       position: relative;
+       top: -5px;
+        margin: 0 3px;
+        outline: none;
+        transition: 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+        &.active, &:hover
+        {
+            border-bottom: 3px solid $black;
+            transition: 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+    }
+}
+
+
+
 .half__bg
 {
     @include mQ(768px)

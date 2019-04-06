@@ -13,6 +13,7 @@
       <!-- Bootstrap CSS -->
       <link rel="stylesheet" href="css/bootstrap.css">
       <link rel="stylesheet" href="css/styles.css">
+      <link rel="stylesheet" href="css/owl.carousel.css">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
       <title>Portfolio - Rajan David</title>
    </head>
@@ -60,7 +61,7 @@
       <section id="about" class="fullPage">
          <div class="container">
             <div class="row">
-               <div class="col-sm-12 col-md-8 col-lg-6  col-xl-col-6 aboutImg">
+               <div class="col-sm-12  col-lg-6  col-xl-col-6 aboutImg ">
                </div>
                <div class="col-sm-12 col-md-12 col-lg-6  col-xl-col-6">
                   <h2 class="aboutTitle text-uppercase">Hey!</h2>
@@ -72,6 +73,8 @@
                      <p> Deep expertise and hands on experience with Web Applications and programming languages such as HTML, CSS, JavaScript, JQuery</p>
                   </article>
                </div>
+               <div class="col-sm-12  col-lg-6  col-xl-col-6 aboutImg aboutImg--show ">
+                </div>
             </div>
          </div>
       </section>
@@ -94,6 +97,38 @@
       </section>
       <section id="projects" class="fullPage">
          <div class="projectsDetails row no-padding ml-0 mr-0 ">
+             <div id="projects__mobile">
+                 <div class="owl-carousel">
+                    <div class="item">
+                        <figure>
+                        <a href="https://www.bharathuniv.ac.in/admission2019/application/"> 
+                            <img class="img-fluid" src="images/projects/6.JPG">
+                        </a>
+                     </figure>
+                    </div>
+                   
+                    <div class="item">
+                         <figure>
+                        <a href="http://friskcorp.com/"> <img class="img-fluid" src="images/projects/2.jpg"></a>
+                     </figure>
+                    </div>
+                    <div class="item">
+                        <figure>
+                        <a href="http://www.youboo.in/"><img class="img-fluid" src="images/projects/3.jpg"></a>
+                     </figure>
+                    </div>
+                    <div class="item">
+                            <figure>
+                                    <a href="http://kphospital.com/"><img class="img-fluid" src="images/projects/5.JPG"></a>
+                                 </figure>
+                    </div>
+                    <div class="item">
+                         <figure>
+                        <a href="http://krishnagroup.ventures/headquarters/"><img class="img-fluid" src="images/projects/7.JPG"></a>
+                     </figure>
+                    </div>
+                 </div>
+             </div>
             <div class="col-sm-12 col-md-6 col-lg-4 projects">
                <div class="row align-items-start">
                   <div class="col">
@@ -218,8 +253,10 @@
          </footer>
       </section>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="js/owl.carousel.js"></script>
       <script src='js/particles.min.js'></script>
       <script src="js/particles.js"></script>
+     
       <script src="js/bootstrap.min.js"></script>
       <script>
          $(window).on("load", function() {
@@ -248,7 +285,24 @@
          } );
          } );
     });
-          
+    $('.owl-carousel').owlCarousel({
+    loop:false,
+    margin:0,
+    nav:false,
+    autoplay:true,
+    smartSpeed:800,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        }
+    }
+})    
       </script>
    </body>
 </html>
