@@ -360,7 +360,7 @@ html, body {
 #projects__mobile {
   display: none;
   overflow: hidden;
-  padding: 0rem 0 4rem;
+  padding: 0rem 0 0rem;
 }
 
 @media screen and (max-width: 728px) {
